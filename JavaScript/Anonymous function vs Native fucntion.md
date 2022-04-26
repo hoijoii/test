@@ -64,7 +64,7 @@ function 함수이름() {  }
 그렇다면 굳이 익명함수를 사용하는 이유가 무엇일까요?
 <br/>
 
-## 2. 익명 함수(Anonymous function) vs 선언적 함수(Native function)
+## 3. 익명 함수(Anonymous function) vs 선언적 함수(Native function)
 
 결론부터 말하자면, 익명함수가 더 안전합니다.
 
