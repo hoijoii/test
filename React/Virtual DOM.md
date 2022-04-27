@@ -13,7 +13,7 @@ UI로 표현될 객체를 가상 메모리에 저장하고, 라이브러리에 �
 - 웹 브라우저는 DOM을 활용해 객체에 js, CSS를 적용
 - DOM은 트리 형태라서 특정 노드를 찾기/수정/제거하거나 원하는 곳에 삽입 가능
 
-![default](./DOM-tree-for-a-sample-HTML-code.png)
+![default](../imgs/DOM-tree-for-a-sample-HTML-code.png)
 
 #### 1-2. DOM의 문제점과 해결법
 

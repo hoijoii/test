@@ -48,7 +48,7 @@ forEach() 메소드를 통해 value를 콘솔에 출력함과 동시에 index, a
 
 주황색은 value, 연두색은 index, 하늘색 박스는 array입니다.
 
-![default](./image-map-forEach.jpg)
+![default](../imgs/image-map-forEach.jpg)
 
 <br/>
 
@@ -66,7 +66,7 @@ const IterationSample = () => {
 export default IterationSample;
 ```
 
-![default](./image-map-ele.png)
+![default](../imgs/image-map-ele.png)
 
 요소 li로 이루어진 배열을 ul태그 안에 넣어 리턴했습니다. 간단히 만든 컴포넌트기에 고유값이 없어 key로는 index를 사용했습니다.
 
