@@ -26,7 +26,7 @@
 
 <br>
 
-## 3. Hook의 기능
+## 3. 내장 Hook
 
 - useState : 컴포넌트 상태관리
 - useEffect : 렌더링될 때마다 특정 작업 수행
@@ -34,6 +34,11 @@
 - useMemo : 컴포넌트 내부 연산 최적화
 - useCallback : 렌더링 성능 최적화
 - useRef : 함수 컴포넌트에서 ref을 쉽게 사용할 수 있도록 함
+
+## 4. Hook 사용 규칙
+
+- <b>최상위</b>에서만 Hook을 호출해야 한다.
+- React 함수 컴포넌트 내에서만 Hook을 호출해야 한다. (일반 js 함수에서 호출 금지, custom Hook 내에서는 가능)
 
 <br>
 
