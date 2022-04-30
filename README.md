@@ -13,3 +13,4 @@
 - [Virtual DOM](https://github.com/hoijoii/TIL/blob/main/React/Virtual%20DOM.md)
 - [Life cycle of Component](https://github.com/hoijoii/TIL/blob/main/React/Lifecycle%20of%20Component.md)
 - [map()](<https://github.com/hoijoii/TIL/blob/main/JavaScript/map().md>)
+- [Hooks](https://github.com/hoijoii/TIL/blob/main/React/Hooks.md)
