@@ -15,3 +15,4 @@
 - [map()](<https://github.com/hoijoii/TIL/blob/main/JavaScript/map().md>)
 - [Hooks](https://github.com/hoijoii/TIL/blob/main/React/Hooks.md)
   - [State Hook](https://github.com/hoijoii/TIL/blob/main/React/Hooks_useState.md)
+  - [Effect Hook](https://github.com/hoijoii/TIL/blob/main/React/Hooks_useEffect.md)
