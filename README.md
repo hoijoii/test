@@ -14,5 +14,6 @@
 - [Life cycle of Component](https://github.com/hoijoii/TIL/blob/main/React/Lifecycle%20of%20Component.md)
 - [map()](<https://github.com/hoijoii/TIL/blob/main/JavaScript/map().md>)
 - [Hooks](https://github.com/hoijoii/TIL/blob/main/React/Hooks.md)
-  - [State Hook](https://github.com/hoijoii/TIL/blob/main/React/Hooks_useState.md)
-  - [Effect Hook](https://github.com/hoijoii/TIL/blob/main/React/Hooks_useEffect.md)
+  - [useState](https://github.com/hoijoii/TIL/blob/main/React/Hooks_useState.md)
+  - [useEffect](https://github.com/hoijoii/TIL/blob/main/React/Hooks_useEffect.md)
+  - [useReducer](https://github.com/hoijoii/TIL/blob/main/React/Hooks_useReducer.md)
