@@ -7,6 +7,7 @@
 - [익명 함수 vs 선언적 함수](https://github.com/hoijoii/TIL/blob/main/JavaScript/Anonymous%20function%20vs%20Native%20fucntion.md)
 - [map()](<https://github.com/hoijoii/TIL/blob/main/JavaScript/map().md>)
 - [기본자료형과 Prototype](https://github.com/hoijoii/TIL/blob/main/JavaScript/Primitive%20data%20type%20and%20Prototype.md)
+- [DOMContentLoaded](https://github.com/hoijoii/TIL/blob/main/JavaScript/DOMContentLoaded.md)
 
 ## React
 
