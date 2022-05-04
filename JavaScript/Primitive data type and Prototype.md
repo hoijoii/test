@@ -101,6 +101,8 @@ this\*\*n 이라고 써도 상관없지만 일반적으로는 valueOf()도 같�
 
 ![default](../imgs/image-prototype-ex2.png)
 
+<br>
+
 ## Reference
 
 - JavaScript Tutorial : https://www.javascripttutorial.net/javascript-prototype/
