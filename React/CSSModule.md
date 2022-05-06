@@ -90,5 +90,5 @@ test.module.css, CssModuleTest.js 파일에 새로운 클래스를 추가해보�
 
 ## Reference
 
-- React : https://ko.reactjs.org/docs/hooks-intro.html
+- Create React App(Adding a CSS Modules Stylesheet) : https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/
 - 리액트를 다루는 기술, 김민준
