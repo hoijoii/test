@@ -88,6 +88,18 @@ test.module.css, CssModuleTest.js 파일에 새로운 클래스를 추가해보�
 
 <br>
 
+## 3. 일반 CSS 파일에서 적용하기
+
+":global"을 이용하여 전역적으로 CSS를 적용했던 것처럼, ":local"을 사용해 CSS Module을 적용할 수 있습니다.
+
+```
+:local .title {
+
+}
+```
+
+<br>
+
 ## Reference
 
 - Create React App(Adding a CSS Modules Stylesheet) : https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/
