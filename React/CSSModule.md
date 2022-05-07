@@ -94,7 +94,7 @@ test.module.css, CssModuleTest.js 파일에 새로운 클래스를 추가해보�
 
 ```
 :local .title {
-
+  /*스타일*/
 }
 ```
 
