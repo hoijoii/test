@@ -21,3 +21,7 @@
   - [useReducer](https://github.com/hoijoii/TIL/blob/main/React/Hooks_useReducer.md)
   - [useMemo & useCallback](https://github.com/hoijoii/TIL/blob/main/React/Hooks_useMemo.md)
 - [CSS Module](https://github.com/hoijoii/TIL/blob/main/React/CSSModule.md)
+
+## Errors
+
+- [.map is not a function (React)](https://github.com/hoijoii/TIL/blob/main/Errors/mapIsNotAFunction.md)
