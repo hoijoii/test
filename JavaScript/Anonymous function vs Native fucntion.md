@@ -58,10 +58,11 @@ function 함수이름() {  }
 
 #### 2-1. 선언적 함수의 선언
 
-![default](./image-nat-func-console.png)
+![default](../imgs/image-nat-func-console.png)
 위에서의 익명함수와는 다르게 함수 이름이 같이 출력된 것을 볼 수 있습니다. 물론 선언적 함수도 콜백함수/메소드 안에서 사용이 가능합니다.
 
 그렇다면 굳이 익명함수를 사용하는 이유가 무엇일까요?
+
 <br/>
 
 ## 3. 익명 함수(Anonymous function) vs 선언적 함수(Native function)
@@ -88,7 +89,7 @@ function 함수이름() {  }
 
 함수의 이름이 같을 경우 더 늦게 실행되는 함수가 먼저 만들어진 함수를 덮어씁니다. 위 코드의 실행 결과는 아래와 같습니다.
 
-![default](./image-ano-result.png)
+![default](../imgs/image-ano-result.png)
 
 정리하자면... 선언적함수는 코드 순차실행 전에 미리 생성되고, 익명함수는 순차실행되므로 선언적함수를 익명함수가 덮어씁니다.
 
