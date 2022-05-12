@@ -14,6 +14,7 @@
 - [기본자료형과 Prototype](https://github.com/hoijoii/TIL/blob/main/JavaScript/Primitive%20data%20type%20and%20Prototype.md)
 - [DOMContentLoaded](https://github.com/hoijoii/TIL/blob/main/JavaScript/DOMContentLoaded.md)
 - [concat()](<https://github.com/hoijoii/TIL/blob/main/JavaScript/concat().md>)
+- [JSON.strigify() & JSON.parse()](https://github.com/hoijoii/TIL/blob/main/JavaScript/JSONMethods.md)
 
 ## React
 
