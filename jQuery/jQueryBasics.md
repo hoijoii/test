@@ -1,7 +1,7 @@
 # jQuery
 
 jQuery는 가장 인기있는 JS 라이브러리입니다. 이벤트 처리와 애니메이션 등을 간단하고 빠르게 구현합니다.
-jQuery는 HTML 문서의 요소를 "찾고 선택하여" 조작합니다.
+jQuery는 HTML 문서의 요소/아이디/클래스를 "찾고 선택하여" 조작합니다.
 
 ```
 //예시
@@ -13,9 +13,10 @@ $("div")css({'background': '#FF0000'});
 
 - jQuery의 장점
 - jQuery 사용하기
-  - 요소 선택해서 css 적용하기
+  - 요소 선택해 css 적용하기
   - DOMContentLoaded를 jQuery로 작성하기
 - React에서 jQuery 사용하기
+  - id 선택해 input 값 가져오기
 
 <br>
 
@@ -169,7 +170,7 @@ const inputVal = $("#inputId").val();
 <input id="inputId" name="inputName" />
 ```
 
-jQuery에서 input의 id인 inputId를 선택했으므로, .val()에 의해 input에 담기는 텍스트는 inputVal이 될 것입니다.
+jQuery에서 input의 id인 inputId를 선택했으므로 input에 담기는 텍스트는 .val()에 의해 inputVal이 될 것입니다.
 아래는 텍스트를 입력받아 알림창을 띄우는 간단한 코드입니다. 버튼을 누르면 AlertName 함수가 실행됩니다.
 
 ```
