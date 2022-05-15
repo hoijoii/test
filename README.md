@@ -19,7 +19,7 @@
 
 ## jQuery
 
-- [jQuery 기초(script, react에서 사용법)](https://github.com/hoijoii/TIL/blob/main/jQuery/jQueryBasics.md)
+- [jQuery 기초(script, react에서의 사용)](https://github.com/hoijoii/TIL/blob/main/jQuery/jQueryBasics.md)
 
 ## React
 
