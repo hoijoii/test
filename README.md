@@ -16,6 +16,7 @@
 - [concat()](<https://github.com/hoijoii/TIL/blob/main/JavaScript/concat().md>)
 - [JSON.strigify() & JSON.parse()](https://github.com/hoijoii/TIL/blob/main/JavaScript/JSONMethods.md)
 - [async & await (비동기 처리)](https://github.com/hoijoii/TIL/blob/main/JavaScript/Asynchronous.md)
+- [localStorage와 sessionStorage](https://github.com/hoijoii/TIL/blob/main/JavaScript/localVSsession.md)
 
 ## jQuery
 
