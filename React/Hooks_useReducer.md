@@ -2,6 +2,8 @@
 
 useState보다 더 다양한 상태를 다른 값으로 업데이트하고 싶을 때 사용합니다.
 
+![default](../imgs/image-useReducer-process.png)
+
 ## 1. 형태
 
 useReducer의 인자:
