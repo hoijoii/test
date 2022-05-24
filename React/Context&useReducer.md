@@ -97,9 +97,9 @@ Consumer를 사용하여 Context 안에 들어있는 값을 조회할 수 있습
 #### 2-1. userContext.js
 
 - useContext를 사용합니다. Consumer보다 더 간편하게 Context를 사용할 수 있습니다.
-- useReducer의 state와 dispatch 둘 다 전역적으로 관리하겠습니다. state는 username, dispatch로는 LOGIN과 LOGOUT 두 가지 action이 있습니다.
+- useReducer의 state와 dispatch 둘 다 전역적으로 관리하겠습니다. state는 username, dispatch로는 LOGIN과 LOGOUT 두 가지 action이 있습니다. 하위 컴포넌트에서 어떤 action을 취하느냐에 따라 전역적으로 state가 바뀔 것입니다.
 - state, dispatch 두 가지의 관리를 위해서는 context도 두 가지가 필요합니다.
-- useContext를 컴포넌트마다 선언하지 않고 userContext.js 안에서 Hook을 만들어 사용하겠습니다.
+- useContext를 컴포넌트마다 일일이 선언하지 않고 userContext.js 안에서 Hook을 만들어 사용하겠습니다.
 
 ```
 import { createContext, useContext } from "react";
@@ -120,11 +120,106 @@ export const useUserDispatch = () => {
 };
 ```
 
-state와 dispatch를 관리할 context들을 만들어줍니다. 초깃값은 null입니다.
+state와 dispatch를 관리할 context들을 만들어줍니다. 초깃값은 null입니다. state context와 dispatch context를 consume할 수 있는 Hook도 만들어주었습니다.
+
+이번엔 Provider 함수를 만들어줍니다. useReducer를 이 안에서 사용할 것이기 때문에 일단 작성해주겠습니다. state와 dispatch를 관리할 것이므로 각각의 Provider value에 state, dispatch를 작성합니다.
+
+```
+export const UserProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(reducer, initState);
+
+  return (
+    <UserStateContext.Provider value={state}>
+      <UserDispatchContext.Provider value={dispatch}>
+        {children}
+      </UserDispatchContext.Provider>
+    </UserStateContext.Provider>
+  );
+};
+```
+
+하위 컴포넌트들에 여러 context를 consume하게 하고 싶다면 위처럼 Provider를 중첩하면 됩니다.
+
+이제 useReducer를 작성해봅니다.
+
+```
+//useReducer 추가
+import { createContext, useContext, useReducer } from "react";
+
+const initState = {
+  user: "",
+};
+
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "LOGIN":
+      return {
+        user: action.user,
+      };
+    case "LOGOUT":
+      return {
+        user: "",
+      };
+    default:
+      return state;
+  }
+};
 
 ```
 
+하위 컴포넌트에서 로그인 action을 취하면 사용자 정보를 Context에 적용시키고, 로그아웃 action을 취하면 값을 없앱니다.
+
+userContext.js 작성이 끝났습니다. 전체 코드입니다.
+
 ```
+import { createContext, useContext, useReducer } from "react";
+
+const initState = {
+  user: "",
+};
+
+const reducer = (state, action) => {
+  switch (action.type) {
+    case "LOGIN":
+      return {
+        user: action.user,
+      };
+    case "LOGOUT":
+      return {
+        user: "",
+      };
+    default:
+      return state;
+  }
+};
+
+export const UserStateContext = createContext(null);
+export const UserDispatchContext = createContext(null);
+
+export const UserProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(reducer, initState);
+
+  return (
+    <UserStateContext.Provider value={state}>
+      <UserDispatchContext.Provider value={dispatch}>
+        {children}
+      </UserDispatchContext.Provider>
+    </UserStateContext.Provider>
+  );
+};
+
+export const useUserState = () => {
+  const state = useContext(UserStateContext);
+  return state;
+};
+
+export const useUserDispatch = () => {
+  const dispatch = useContext(UserDispatchContext);
+  return dispatch;
+};
+```
+
+#### 2-2. LoginPage.js
 
 <br>
 
