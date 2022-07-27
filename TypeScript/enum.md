@@ -73,6 +73,29 @@ enum Direction {
 ```
 Numeric enums 처럼 자동 증가 기능은 없지만 serialize 한다는 이점이 있다. 숫자만으로는 어떤 유의미한 정보를 제공할 수 없으므로, string enums로 의미 있고 읽기 좋은 값을 전달할 수 있다. 
 
+
+## (+)
+
+interface는 외부에서 사용하는 변수와, 그에 대해 타이핑될 타입들을 모아놓은 것인데 enum도 변수에 타입으로서 지정될 수 있으므로 interface 안에서 key, type의 형태로 사용 가능하다.
+
+```
+export enum DIRECTION_TYPE { 
+  UP, 
+  DOWN, 
+  RIGHT,
+  LEFT 
+}
+
+// DIRECTION_TYPE을 사용할 다른 ts 파일
+import {DIRECTION_TYPE} from "경로"
+...
+export interface IService {
+  trainingType: DIRECTION_TYPE // 여기!
+  serviceId: number
+  categories: Array<string>
+}
+```
+
 <br>
 
 ## Reference
