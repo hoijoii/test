@@ -17,6 +17,7 @@
 - [JSON.strigify() & JSON.parse()](https://github.com/hoijoii/TIL/blob/main/JavaScript/JSONMethods.md)
 - [async & await (비동기 처리)](https://github.com/hoijoii/TIL/blob/main/JavaScript/Asynchronous.md)
 - [localStorage와 sessionStorage](https://github.com/hoijoii/TIL/blob/main/JavaScript/localVSsession.md)
+- [getter](https://github.com/hoijoii/TIL/blob/main/JavaScript/getter.md)
 
 ## jQuery
 
@@ -35,6 +36,15 @@
 - [CSS Module](https://github.com/hoijoii/TIL/blob/main/React/CSSModule.md)
 - [Context API](https://github.com/hoijoii/TIL/blob/main/React/Context.md)
 - [Fragments](https://github.com/hoijoii/TIL/blob/main/React/Fragments.md)
+
+## Typescript
+
+- [enum](https://github.com/hoijoii/TIL/blob/main/TypeScript/enum.md)
+
+## Vue
+
+- [Data Binding](https://github.com/hoijoii/TIL/blob/main/Vue/DataBinding.md)
+
 
 ## Errors
 
