@@ -5,8 +5,8 @@
 <br>
 
 ### Methods
-- <a path="#find">_find / _.findIndex</a>
-- <a path="#set">_.set</a>
+- <a href="#find">_find / _.findIndex</a>
+- <a href="#set">_.set</a>
 
 <br>
 
