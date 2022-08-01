@@ -18,6 +18,9 @@
 - [async & await (비동기 처리)](https://github.com/hoijoii/TIL/blob/main/JavaScript/Asynchronous.md)
 - [localStorage와 sessionStorage](https://github.com/hoijoii/TIL/blob/main/JavaScript/localVSsession.md)
 - [getter](https://github.com/hoijoii/TIL/blob/main/JavaScript/getter.md)
+- [lodash](https://github.com/hoijoii/TIL/blob/main/JavaScript/lodash.md)
+  - [_.find / _.findIndex](https://github.com/hoijoii/TIL/blob/main/JavaScript/lodash.md#find)
+  - [_.set](https://github.com/hoijoii/TIL/blob/main/JavaScript/lodash.md#set)
 
 ## jQuery
 
