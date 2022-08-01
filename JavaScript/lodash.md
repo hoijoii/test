@@ -5,15 +5,64 @@
 <br>
 
 ### Methods
-
-- Array
-  - 
-
-- Object
-  - <a path="#set">_.set</a>
-
+- <a path="#find">_find / _.findIndex</a>
+- <a path="#set">_.set</a>
 
 <br>
+
+## <p id="find">_.find / _.findIndex</p>
+
+```
+_.find(collection, 'key'/조건을 나타낼 표현식)
+```
+key에 해당하는 요소를 반환하거나,
+표현식이 true인 경우의 요소를 찾아 반환한다. (요소가 객체인 경우 요소 전체 반환)
+
+```
+private videoContents = [
+  { type: 'video', title: 'vue', date: '2022-08-01' },
+  { type: 'video', title: 'react', date: '2022-07-31' },
+  { type: 'video', title: 'jQuery', date: '2022-07-30' }
+];
+
+_.find(contents, (item) => item.title === 'vue')
+// {type: 'video', title: 'vue', date: '2022-08-01'}
+
+_.find(contents, {type: 'video', date: '2022-07-31'})
+// {type: 'video', title: 'react', date: '2022-07-31'}
+
+_.find(contents, ['title', 'jQuery'])
+// {type: 'video', title: 'jQuery', date: '2022-07-30'}
+
+_.find(contents, 'title')
+// {type: 'video', title: 'vue', date: '2022-08-01'}
+// 두 번째 자리에 key 값만 쓰면 그에 해당하는 맨 처음 요소만 출력된다.
+```
+
+_.findIndex는 요소의 인덱스를 반환한다. _.find와 동일한 형태로 사용한다.
+
+```
+private videoContents = [
+  { type: 'video', title: 'vue', date: '2022-08-01' },
+  { type: 'video', title: 'react', date: '2022-07-31' },
+  { type: 'video', title: 'jQuery', date: '2022-07-30' }
+];
+
+_.findIndex(contents, (item) => item.title === 'vue')
+// 0
+
+_.findIndex(contents, {type: 'video', date: '2022-07-31'})
+// 1
+
+_.findIndex(contents, ['title', 'jQuery'])
+// 2
+
+_.findIndex(contents, 'title')
+// 0
+```
+
+----
+
 
 ## <p id="set">_.set()</p>
 
