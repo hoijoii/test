@@ -21,6 +21,7 @@
 - [lodash](https://github.com/hoijoii/TIL/blob/main/JavaScript/lodash.md)
   - [_.find / _.findIndex](https://github.com/hoijoii/TIL/blob/main/JavaScript/lodash.md#find)
   - [_.set](https://github.com/hoijoii/TIL/blob/main/JavaScript/lodash.md#set)
+  - [_.cloneDeep](https://github.com/hoijoii/TIL/blob/main/JavaScript/lodash.md#cloneDeep)  
 
 ## jQuery
 
