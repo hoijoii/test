@@ -92,6 +92,7 @@ state에 담긴 값을 component에서 사용하려면 아래처럼 하면 된�
 ...
 ```
 
+
 #### 2-2. action
 
 모든 비동기 작업은 action에서 한다. 그리고 그 작업의 결과값은 mutation으로 넘어간다.
@@ -141,7 +142,48 @@ action의 동작을 다시 한 번 정리하자면,
 
 이라고 할 수 있겠다.
 
+#### 참고 : context
+
+action 핸들러가 가지고 있는 객체. 
+<img src="../imgs/img-vuex-context.png">
+
+context를 이용해 commit, dispatch, getter 등의 메소드를 사용할 수 있다. 
+
+#### 참고2 : action에서 context를 사용하지 않고도 commit 가능
+```
+actions: {
+  비동기작업할함수({ commit }) { 
+    ...
+    commit('mutation이름', resp.data)
+    ...
+  }
+}
+```
+
+
 #### 2-3. mutation
+
+mutation은 
+
+```
+// store/index.js
+...
+  mutations: {
+    mutation이름(state, data){
+      //지금은 신경쓰지 마세요
+      ...
+    }
+  },
+  actions: {
+    비동기작업할함수(context) {
+      api메소드().then((resp) => {
+        // 'mutation이름'이라는 mutation에 resp.data라는 데이터를 넘겨줌
+        context.commit('mutation이름', resp.data)
+      }) //.catch(...) 등 체이닝
+    }
+  },
+...
+```
 
 <br>
 
