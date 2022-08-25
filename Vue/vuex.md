@@ -170,7 +170,7 @@ mutation은
 ...
   mutations: {
     mutation이름(state, data){
-      //지금은 신경쓰지 마세요
+      
       ...
     }
   },
