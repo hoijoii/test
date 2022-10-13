@@ -3,7 +3,8 @@
 ```
 {{ dataBinding }}
 ```
-Javascript 데이터를 HTML 코드에서 사용할 수 있게 해준다.
+Javascript 데이터를 HTML 코드에서 사용할 수 있게 해준다. 
+데이터 바인딩은 Vue의 핵심적인 장점들을 가지고 있다고 볼 수 있다. 바로 '선언적 렌더링(Declarative Rendering)'과 '반응성(Reactivity)'을 보여주기 때문이다! 아래에서 자세히 알아보자.
 
 <br>
 
